@@ -49,7 +49,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold text-gradient">•••</h1>
             <div className="flex gap-6">
-              {["about", "hobbies", "fandoms", "manhwas"].map((section) => (
+              {["about", "hobbies", "fandoms", "manhwas", "dni"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -57,7 +57,8 @@ const Index = () => {
                 >
                   {section === "about" ? "Обо мне" : 
                    section === "hobbies" ? "Увлечения" :
-                   section === "fandoms" ? "Фандомы" : "Манхвы"}
+                   section === "fandoms" ? "Фандомы" : 
+                   section === "manhwas" ? "Манхвы" : "DNI"}
                 </button>
               ))}
             </div>
@@ -206,6 +207,45 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="dni" className="py-20 px-4 mb-20">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">DNI ✕</h2>
+          <Card className="p-8 bg-white/80 backdrop-blur border-2 border-red-200 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center flex-shrink-0">
+                  <Icon name="X" className="text-white" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-red-700 mb-2">Антисы</h3>
+                  <p className="text-gray-700">Люди, которые осуждают других за их интересы и увлечения</p>
+                </div>
+              </div>
+              <div className="h-px bg-gradient-to-r from-red-200 via-pink-200 to-red-200"></div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center flex-shrink-0">
+                  <Icon name="X" className="text-white" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-red-700 mb-2">Считаете, что дружба строится только на фандомах</h3>
+                  <p className="text-gray-700">Дружба — это больше, чем общие интересы</p>
+                </div>
+              </div>
+              <div className="h-px bg-gradient-to-r from-red-200 via-pink-200 to-red-200"></div>
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center flex-shrink-0">
+                  <Icon name="X" className="text-white" size={24} />
+                </div>
+                <div>
+                  <h3 className="text-2xl font-semibold text-red-700 mb-2">Не цените дружбу</h3>
+                  <p className="text-gray-700">Дружба — это важная часть жизни, её нужно ценить и беречь</p>
+                </div>
+              </div>
+            </div>
+          </Card>
         </div>
       </section>
 
