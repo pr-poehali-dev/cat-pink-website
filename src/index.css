@@ -248,7 +248,7 @@
     top: 0;
     bottom: 0;
     width: 20px;
-    z-index: 5;
+    z-index: 1;
     background: linear-gradient(
       180deg,
       rgba(255, 182, 217, 0.3) 0%,
