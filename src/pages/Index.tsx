@@ -61,11 +61,11 @@ const Index = () => {
   ];
 
   const catStickers = [
-    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/86723c30-e857-4538-af31-5834e8903d49.jpg", rotation: -8 },
-    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/303af319-8e75-4822-a542-7a109df6c0a9.jpg", rotation: 12 },
-    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/e44c27ca-8070-462a-9e01-ac7111cbf79f.jpg", rotation: -5 },
-    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/3a07f719-e23a-42bc-9609-aff1855d20a6.jpg", rotation: 15 },
-    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/4708ab85-6ace-4cf2-9efa-4f65f18dc5d2.jpg", rotation: -10 }
+    { url: "https://cdn.poehali.dev/files/2e651a97-32f6-4526-9818-8430b04b93ee.jpg", rotation: -8 },
+    { url: "https://cdn.poehali.dev/files/a5fa6fac-49ca-415f-835b-66b269461a30.jpg", rotation: 12 },
+    { url: "https://cdn.poehali.dev/files/0e1f794a-50cb-4c90-9a22-4b957e69b02d.jpg", rotation: -5 },
+    { url: "https://cdn.poehali.dev/files/9c9bab94-befe-4b18-b378-1a8a83c0a107.jpg", rotation: 15 },
+    { url: "https://cdn.poehali.dev/files/661e930a-0f58-4e78-bbc9-8bc9fe0a6af8.jpg", rotation: -10 }
   ];
 
   const scrollToSection = (id: string) => {
