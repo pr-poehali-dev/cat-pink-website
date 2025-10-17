@@ -5,11 +5,11 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   const fandoms = [
     { name: "My Dress-Up Darling", image: "https://cdn.poehali.dev/files/451b75bd-bdaf-4235-803b-ab621c08f3bd.jpg" },
-    { name: "lololowka", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "lololowka", image: "https://cdn.poehali.dev/files/ef143f9f-7f23-4ad0-8552-00d1a9511754.jpg" },
     { name: "squid game", image: "https://cdn.poehali.dev/files/ed523eb1-9437-42e9-b933-138984d6d306.jpg" },
-    { name: "bang dream", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
-    { name: "genshin", image: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/d1a8d74c-be2a-4f6f-9f8d-3253fdef39ff.jpg" },
-    { name: "hsr", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "bang dream", image: "https://cdn.poehali.dev/files/de22c29e-ec63-463b-ba66-9a4f724ccdf5.jpg" },
+    { name: "genshin impact", image: "https://cdn.poehali.dev/files/d262a722-fa9d-4d7e-b2b7-f50b05f6c205.jpg" },
+
     { name: "crk", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
     { name: "mouthwashing", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
     { name: "nuc", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
