@@ -60,6 +60,14 @@ const Index = () => {
     "любавочка"
   ];
 
+  const catStickers = [
+    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/86723c30-e857-4538-af31-5834e8903d49.jpg", rotation: -8 },
+    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/303af319-8e75-4822-a542-7a109df6c0a9.jpg", rotation: 12 },
+    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/e44c27ca-8070-462a-9e01-ac7111cbf79f.jpg", rotation: -5 },
+    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/3a07f719-e23a-42bc-9609-aff1855d20a6.jpg", rotation: 15 },
+    { url: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/4708ab85-6ace-4cf2-9efa-4f65f18dc5d2.jpg", rotation: -10 }
+  ];
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -149,6 +157,51 @@ const Index = () => {
           </Card>
         </div>
       </section>
+
+      <div className="fixed left-8 top-40 z-20 hidden md:block">
+        <img 
+          src={catStickers[0].url}
+          alt="cat sticker"
+          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          style={{ transform: `rotate(${catStickers[0].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="fixed right-12 top-[500px] z-20 hidden md:block">
+        <img 
+          src={catStickers[1].url}
+          alt="cat sticker"
+          className="w-24 h-24 object-cover rounded-2xl border-4 border-white shadow-md"
+          style={{ transform: `rotate(${catStickers[1].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="fixed left-16 top-[900px] z-20 hidden md:block">
+        <img 
+          src={catStickers[2].url}
+          alt="cat sticker"
+          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          style={{ transform: `rotate(${catStickers[2].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="fixed right-8 top-[1300px] z-20 hidden md:block">
+        <img 
+          src={catStickers[3].url}
+          alt="cat sticker"
+          className="w-24 h-24 object-cover rounded-2xl border-4 border-white shadow-md"
+          style={{ transform: `rotate(${catStickers[3].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="fixed left-10 top-[1700px] z-20 hidden md:block">
+        <img 
+          src={catStickers[4].url}
+          alt="cat sticker"
+          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          style={{ transform: `rotate(${catStickers[4].rotation}deg)` }}
+        />
+      </div>
 
       <section id="hobbies" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
