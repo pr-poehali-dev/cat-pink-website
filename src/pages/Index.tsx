@@ -4,9 +4,19 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const fandoms = [
-    "My Dress-Up Darling", "lololowka", "squid game (s1, s2, s3)", 
-    "bang dream", "genshin", "hsr", "crk", "mouthwashing", 
-    "nuc", "mlp", "dungeon meshi", "kimetsu no yaiba", "dandadan"
+    { name: "My Dress-Up Darling", image: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/af1d060d-a671-432a-b36d-25783e084cba.jpg" },
+    { name: "lololowka", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "squid game", image: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/9c89d1b4-776d-4d90-9f86-ab8418d5707d.jpg" },
+    { name: "bang dream", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
+    { name: "genshin", image: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/d1a8d74c-be2a-4f6f-9f8d-3253fdef39ff.jpg" },
+    { name: "hsr", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "crk", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
+    { name: "mouthwashing", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "nuc", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
+    { name: "mlp", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "dungeon meshi", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
+    { name: "kimetsu no yaiba", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
+    { name: "dandadan", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" }
   ];
 
   const manhwas = [
@@ -154,14 +164,23 @@ const Index = () => {
           <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
             Мои фандомы ★
           </h2>
-          <div className="flex flex-wrap gap-3 justify-center">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
             {fandoms.map((fandom, index) => (
-              <Badge 
+              <div 
                 key={index}
-                className="text-lg px-6 py-3 bg-gradient-to-r from-pink-400 to-purple-400 text-white hover:scale-110 transition-transform cursor-pointer border-2 border-white shadow-md"
+                className="flex flex-col items-center gap-3 group cursor-pointer"
               >
-                {fandom}
-              </Badge>
+                <div className="w-24 h-24 rounded-2xl overflow-hidden border-3 border-pink-300 shadow-lg hover:scale-110 hover:shadow-xl transition-all duration-300">
+                  <img 
+                    src={fandom.image} 
+                    alt={fandom.name}
+                    className="w-full h-full object-cover group-hover:brightness-110 transition-all"
+                  />
+                </div>
+                <p className="text-sm font-medium text-gray-700 text-center max-w-[100px] leading-tight">
+                  {fandom.name}
+                </p>
+              </div>
             ))}
           </div>
           <div className="mt-12 text-center">
