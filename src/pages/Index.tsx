@@ -1,8 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Icon from "@/components/ui/icon";
+import { useState } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+} from "@/components/ui/dialog";
 
 const Index = () => {
+  const [selectedFriend, setSelectedFriend] = useState<{name: string, text: string} | null>(null);
   const fandoms = [
     { name: "My Dress-Up Darling", image: "https://cdn.poehali.dev/files/451b75bd-bdaf-4235-803b-ab621c08f3bd.jpg" },
     { name: "lololowka", image: "https://cdn.poehali.dev/files/ef143f9f-7f23-4ad0-8552-00d1a9511754.jpg" },
@@ -49,16 +57,16 @@ const Index = () => {
   ];
 
   const friends = [
-    "дурак",
-    "саша",
-    "зажичка",
-    "БРО",
-    "дина",
-    "лина",
-    "вормя",
-    "фура",
-    "аня",
-    "любавочка"
+    { name: "дурак", text: "ХАРОШИЙ ЛУЧШИ БРООО обожаю с тобой болтать хочеца болтать с тобой 24/7 и играть в роблокс так же" },
+    { name: "саша", text: "моя няшечкаэ когда-нибудь мы снова начнём ставить 100500 парных аватарок" },
+    { name: "зажичка", text: "зажиняшкаа🥺 очен уважаю очен восхищаюс и нуда,,, баюс немного писать потому что очен няшк" },
+    { name: "БРО", text: "ТИПЯ ТОЖЕ ОБОЖАЮ миджейки любовь наши сыночки🥺 я надеюс што ты со мной почаще будешь ходить в рейвик хотяби" },
+    { name: "дина", text: "ыыыы мояяяя пикми слэйная дотерша обсуждать с тобой всякую фетишизированную хуйню такой КАААЙф" },
+    { name: "лина", text: "гспди альтухааа Лан тоже Любимовка пожалуйста рисуй почаще ходи со мной в магму я так обожаю твои рисуночки и покрасик твой ыыы" },
+    { name: "вормя", text: "МЫ ТАК НЕДАВНО ДРУЖИМ а я уже такого наговорила... НУ ЛАН няшкк очень" },
+    { name: "фура", text: "СИИИИИССС гспди такой рандом подружиться просто потому что ДР в один день ПХПХПХПХ но ты очень комфортная я иногда чувствую себя супер грешной по сравнению с тобой ты ангел  прост" },
+    { name: "аня", text: "лпшечка ирл супер умняшка и крутышка всё умеет и готовит и шьёт и ваще ты наверное и хату построить сможешь" },
+    { name: "любавочка", text: "мой маленьки кид с аутизмом🥺🥺 язык дружбы: буллинг" }
   ];
 
   const catStickers = [
@@ -371,9 +379,10 @@ const Index = () => {
               {friends.map((friend, index) => (
                 <div
                   key={index}
-                  className="px-6 py-3 bg-white/80 rounded-full border-2 border-pink-300 shadow-md hover:scale-110 transition-transform"
+                  onClick={() => setSelectedFriend(friend)}
+                  className="px-6 py-3 bg-white/80 rounded-full border-2 border-pink-300 shadow-md hover:scale-110 transition-transform cursor-pointer"
                 >
-                  <span className="text-lg font-semibold text-pink-700">{friend}</span>
+                  <span className="text-lg font-semibold text-pink-700">{friend.name}</span>
                 </div>
               ))}
             </div>
@@ -459,6 +468,17 @@ const Index = () => {
         </div>
       </footer>
       </div>
+
+      <Dialog open={!!selectedFriend} onOpenChange={() => setSelectedFriend(null)}>
+        <DialogContent className="max-w-md bg-gradient-to-br from-pink-50 to-purple-50 border-2 border-pink-300">
+          <DialogHeader>
+            <DialogTitle className="text-3xl font-bold text-gradient">{selectedFriend?.name}</DialogTitle>
+          </DialogHeader>
+          <div className="py-4">
+            <p className="text-lg text-gray-700 leading-relaxed">{selectedFriend?.text}</p>
+          </div>
+        </DialogContent>
+      </Dialog>
     </div>
   );
 };
