@@ -371,14 +371,16 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 py-3 text-white text-center mt-auto">
-        <div className="flex items-center justify-center gap-2 mb-1">
-          <Icon name="Send" className="text-white" size={20} />
-          <a href="https://t.me/lilbroBBQ" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
-            @lilbroBBQ
-          </a>
+      <footer className="bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 py-3 text-white mt-auto">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center gap-2 mb-1">
+            <Icon name="Send" className="text-white" size={20} />
+            <a href="https://t.me/lilbroBBQ" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
+              @lilbroBBQ
+            </a>
+          </div>
+          <p className="text-sm">мой тгк: @lililibabyQ</p>
         </div>
-        <p className="text-sm">мой тгк: @lililibabyQ</p>
       </footer>
       </div>
     </div>
