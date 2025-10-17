@@ -10,11 +10,11 @@ const Index = () => {
     { name: "bang dream", image: "https://cdn.poehali.dev/files/de22c29e-ec63-463b-ba66-9a4f724ccdf5.jpg" },
     { name: "genshin impact", image: "https://cdn.poehali.dev/files/d262a722-fa9d-4d7e-b2b7-f50b05f6c205.jpg" },
 
-    { name: "crk", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
-    { name: "mouthwashing", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
-    { name: "nuc", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
-    { name: "mlp", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
-    { name: "dungeon meshi", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
+    { name: "crk", image: "https://cdn.poehali.dev/files/4e052af9-a54b-45da-b78f-2dbb875bbb61.jpg" },
+    { name: "mouthwashing", image: "https://cdn.poehali.dev/files/2a5f0e27-26a0-4bec-8e47-16bae66e0073.jpg" },
+    { name: "nuc", image: "https://cdn.poehali.dev/files/d02cfdbf-29cc-4411-823a-925becf3161e.jpg" },
+    { name: "mlp", image: "https://cdn.poehali.dev/files/bc985f5c-b18f-4409-8db6-7fa448a004e7.jpg" },
+    { name: "dungeon meshi", image: "https://cdn.poehali.dev/files/44502990-e7c1-4fa5-987b-c37da9ef5aae.jpg" },
     { name: "kimetsu no yaiba", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
     { name: "dandadan", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" }
   ];
