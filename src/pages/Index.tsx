@@ -88,9 +88,7 @@ const Index = () => {
                 <Badge className="bg-purple-400 text-white text-lg px-4 py-2"></Badge>
                 <Badge className="bg-cyan-400 text-white text-lg px-4 py-2"></Badge>
               </div>
-              <p className="text-xl text-gray-700 leading-relaxed">
-                Добро пожаловать в мой милый уголок интернета! ✧
-              </p>
+              <p className="text-xl text-gray-700 leading-relaxed text-center">хай ! :ь</p>
             </div>
           </div>
         </div>
