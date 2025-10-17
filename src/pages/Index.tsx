@@ -209,7 +209,7 @@ const Index = () => {
 
       <section id="dni" className="py-20 px-4 mb-20">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">DNI ✕</h2>
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">DNI </h2>
           <Card className="p-8 bg-white/80 backdrop-blur border-2 border-red-200 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
