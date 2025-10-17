@@ -143,9 +143,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-3xl font-bold text-purple-700">Персонажи</h3>
               </div>
-              <p className="text-gray-700 leading-relaxed">
-                Прописываю своих персонажей, создаю их истории и характеры :3
-              </p>
+              <p className="text-gray-700 leading-relaxed text-center">какая-то омегаверсная херня...</p>
             </Card>
           </div>
         </div>
