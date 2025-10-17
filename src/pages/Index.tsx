@@ -47,7 +47,7 @@ const Index = () => {
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-200 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-gradient">Лиса</h1>
+            <h1 className="text-3xl font-bold text-gradient">•••</h1>
             <div className="flex gap-6">
               {["about", "hobbies", "fandoms", "manhwas"].map((section) => (
                 <button
