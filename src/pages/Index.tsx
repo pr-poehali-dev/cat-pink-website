@@ -80,9 +80,7 @@ const Index = () => {
               />
             </div>
             <div className="space-y-6 animate-fade-in">
-              <h2 className="text-7xl font-bold text-gradient leading-tight">
-                Привет! Я Лиса
-              </h2>
+              <h2 className="text-7xl font-bold text-gradient leading-tight">REAL PEAK ME</h2>
               <div className="flex gap-3 flex-wrap">
                 <Badge className="bg-pink-400 text-white text-lg px-4 py-2"></Badge>
                 <Badge className="bg-purple-400 text-white text-lg px-4 py-2"></Badge>
