@@ -131,7 +131,7 @@ const Index = () => {
                 <div className="flex items-start gap-3">
                   <Icon name="User" className="text-pink-500 mt-1" size={24} />
                   <div>
-                    <h3 className="text-2xl font-semibold text-pink-700">Лиса</h3>
+                    <h3 className="text-2xl font-semibold text-pink-700">Лиса/Алиса/лися</h3>
                     <p className="text-gray-600">17 y.o., cisgirl, peak me</p>
                   </div>
                 </div>
