@@ -4,7 +4,7 @@ import Icon from "@/components/ui/icon";
 
 const Index = () => {
   const fandoms = [
-    { name: "My Dress-Up Darling", image: "https://cdn.poehali.dev/projects/291d8774-6549-4504-8d90-7da9022fb3e9/files/af1d060d-a671-432a-b36d-25783e084cba.jpg" },
+    { name: "My Dress-Up Darling", image: "https://cdn.poehali.dev/files/451b75bd-bdaf-4235-803b-ab621c08f3bd.jpg" },
     { name: "lololowka", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
     { name: "squid game", image: "https://cdn.poehali.dev/files/ed523eb1-9437-42e9-b933-138984d6d306.jpg" },
     { name: "bang dream", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" },
