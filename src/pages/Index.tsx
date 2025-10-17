@@ -214,7 +214,7 @@ const Index = () => {
         <img 
           src={cuteStickers[0].url}
           alt="cute sticker"
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${cuteStickers[0].rotation}deg)` }}
         />
       </div>
@@ -223,7 +223,7 @@ const Index = () => {
         <img 
           src={cuteStickers[1].url}
           alt="cute sticker"
-          className="w-14 h-14 md:w-16 md:h-16 object-contain"
+          className="w-14 h-14 md:w-16 md:h-16 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${cuteStickers[1].rotation}deg)` }}
         />
       </div>
@@ -232,7 +232,7 @@ const Index = () => {
         <img 
           src={cuteStickers[2].url}
           alt="cute sticker"
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${cuteStickers[2].rotation}deg)` }}
         />
       </div>
@@ -241,7 +241,7 @@ const Index = () => {
         <img 
           src={cuteStickers[3].url}
           alt="cute sticker"
-          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${cuteStickers[3].rotation}deg)` }}
         />
       </div>
