@@ -213,7 +213,7 @@ const Index = () => {
           <Card className="p-8 bg-white/80 backdrop-blur border-2 border-red-200 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 bg-pink-300">
                   <Icon name="X" className="text-white" size={24} />
                 </div>
                 <div>
