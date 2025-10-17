@@ -181,9 +181,7 @@ const Index = () => {
 
       <section id="manhwas" className="py-20 px-4 pb-32">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-6xl font-bold text-center mb-8 text-gradient">
-            Любимые манхвы ◆
-          </h2>
+          <h2 className="text-6xl font-bold text-center mb-8 text-gradient">Любимые манхвы </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
             <span className="inline-block mr-2">♥</span>
             означает особенно любимые
