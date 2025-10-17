@@ -233,7 +233,7 @@ const Index = () => {
               </div>
               <div className="h-px bg-gradient-to-r from-red-200 via-pink-200 to-red-200"></div>
               <div className="flex items-start gap-4">
-                <div className="w-12 h-12 rounded-full bg-red-400 flex items-center justify-center flex-shrink-0">
+                <div className="w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0 bg-pink-300">
                   <Icon name="X" className="text-white" size={24} />
                 </div>
                 <div>
