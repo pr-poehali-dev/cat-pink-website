@@ -38,6 +38,15 @@ const Index = () => {
     { title: "проект ботаник", fav: false }
   ];
 
+  const music = [
+    "Мэйби Бэйби",
+    "Дора",
+    "Kill Eva",
+    "Staple R",
+    "Underoath",
+    "ЛСП(немного...)"
+  ];
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -49,7 +58,7 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <h1 className="text-3xl font-bold text-gradient">•</h1>
             <div className="flex gap-6">
-              {["about", "hobbies", "fandoms", "manhwas", "dni"].map((section) => (
+              {["about", "hobbies", "fandoms", "manhwas", "music", "dni"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -58,7 +67,8 @@ const Index = () => {
                   {section === "about" ? "Обо мне" : 
                    section === "hobbies" ? "Увлечения" :
                    section === "fandoms" ? "Фандомы" : 
-                   section === "manhwas" ? "Манхвы" : "DNI"}
+                   section === "manhwas" ? "Манхвы" : 
+                   section === "music" ? "Музыка" : "DNI"}
                 </button>
               ))}
             </div>
@@ -200,6 +210,25 @@ const Index = () => {
                   {manhwa.fav && (
                     <span className="text-pink-500 text-xl">♥</span>
                   )}
+                </div>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section id="music" className="py-20 px-4 bg-white/40">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">Любимая музыка</h2>
+          <div className="grid md:grid-cols-2 gap-4">
+            {music.map((artist, index) => (
+              <Card 
+                key={index}
+                className="p-6 bg-gradient-to-br from-cyan-100 to-purple-50 border-2 border-cyan-200 rounded-3xl hover:scale-105 transition-transform shadow-md hover:shadow-xl"
+              >
+                <div className="flex items-center gap-3">
+                  <Icon name="Music" className="text-cyan-500" size={24} />
+                  <h3 className="text-xl font-semibold text-gray-800">{artist}</h3>
                 </div>
               </Card>
             ))}
