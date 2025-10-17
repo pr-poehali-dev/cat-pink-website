@@ -151,9 +151,7 @@ const Index = () => {
 
       <section id="fandoms" className="py-20 px-4 bg-white/40">
         <div className="container mx-auto max-w-6xl">
-          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
-            Мои фандомы ★
-          </h2>
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">Мои фандомы </h2>
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 justify-items-center">
             {fandoms.map((fandom, index) => (
               <div 
