@@ -56,9 +56,9 @@ const Index = () => {
       </nav>
 
       <section className="pt-32 pb-20 px-4 relative overflow-hidden">
-        <div className="absolute top-10 left-10 text-6xl animate-bounce-slow">💕</div>
-        <div className="absolute top-40 right-20 text-5xl animate-float">🎀</div>
-        <div className="absolute bottom-20 left-1/4 text-4xl animate-pulse-slow">✨</div>
+        <div className="absolute top-10 left-10 text-6xl text-pink-400 animate-bounce-slow">♡</div>
+        <div className="absolute top-40 right-20 text-5xl text-purple-400 animate-float">✿</div>
+        <div className="absolute bottom-20 left-1/4 text-4xl text-cyan-400 animate-pulse-slow">✧</div>
         
         <div className="container mx-auto max-w-6xl">
           <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -71,7 +71,7 @@ const Index = () => {
             </div>
             <div className="space-y-6 animate-fade-in">
               <h2 className="text-7xl font-bold text-gradient leading-tight">
-                Привет! Я Лиса 🦊
+                Привет! Я Лиса
               </h2>
               <div className="flex gap-3 flex-wrap">
                 <Badge className="bg-pink-400 text-white text-lg px-4 py-2">17 y.o.</Badge>
@@ -79,7 +79,7 @@ const Index = () => {
                 <Badge className="bg-cyan-400 text-white text-lg px-4 py-2">peak me</Badge>
               </div>
               <p className="text-xl text-gray-700 leading-relaxed">
-                Добро пожаловать в мой милый уголок интернета! ✨
+                Добро пожаловать в мой милый уголок интернета! ✧
               </p>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Index = () => {
       <section id="about" className="py-20 px-4 bg-white/40">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
-            Обо мне 💖
+            Обо мне ♥
           </h2>
           <Card className="p-8 bg-white/80 backdrop-blur border-2 border-pink-200 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
             <div className="grid md:grid-cols-2 gap-8 items-center">
@@ -108,7 +108,7 @@ const Index = () => {
                 </div>
                 <div className="h-px bg-gradient-to-r from-pink-200 via-purple-200 to-cyan-200"></div>
                 <p className="text-gray-700 leading-relaxed">
-                  Живу в мире аниме, манхвы и творчества. Обожаю создавать что-то своё и погружаться в увлекательные истории! 🌸
+                  Живу в мире аниме, манхвы и творчества. Обожаю создавать что-то своё и погружаться в увлекательные истории! ✿
                 </p>
               </div>
             </div>
@@ -119,13 +119,13 @@ const Index = () => {
       <section id="hobbies" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
           <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
-            Увлечения 🎨
+            Увлечения ✧
           </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-8 bg-gradient-to-br from-pink-100 to-pink-50 border-2 border-pink-200 rounded-3xl hover:scale-105 transition-transform shadow-lg">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full bg-pink-400 flex items-center justify-center text-3xl">
-                  🎨
+                <div className="w-16 h-16 rounded-full bg-pink-400 flex items-center justify-center">
+                  <Icon name="Palette" className="text-white" size={32} />
                 </div>
                 <h3 className="text-3xl font-bold text-pink-700">Рисование</h3>
               </div>
@@ -136,8 +136,8 @@ const Index = () => {
 
             <Card className="p-8 bg-gradient-to-br from-purple-100 to-purple-50 border-2 border-purple-200 rounded-3xl hover:scale-105 transition-transform shadow-lg">
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-16 h-16 rounded-full bg-purple-400 flex items-center justify-center text-3xl">
-                  ✍️
+                <div className="w-16 h-16 rounded-full bg-purple-400 flex items-center justify-center">
+                  <Icon name="PenTool" className="text-white" size={32} />
                 </div>
                 <h3 className="text-3xl font-bold text-purple-700">Персонажи</h3>
               </div>
@@ -152,7 +152,7 @@ const Index = () => {
       <section id="fandoms" className="py-20 px-4 bg-white/40">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
-            Мои фандомы 🌟
+            Мои фандомы ★
           </h2>
           <div className="flex flex-wrap gap-3 justify-center">
             {fandoms.map((fandom, index) => (
@@ -165,7 +165,7 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <p className="text-gray-600 text-lg">и многое другое! 💫</p>
+            <p className="text-gray-600 text-lg">и многое другое! ✦</p>
           </div>
         </div>
       </section>
@@ -173,7 +173,7 @@ const Index = () => {
       <section id="manhwas" className="py-20 px-4 pb-32">
         <div className="container mx-auto max-w-6xl">
           <h2 className="text-6xl font-bold text-center mb-8 text-gradient">
-            Любимые манхвы 📚
+            Любимые манхвы ◆
           </h2>
           <p className="text-center text-gray-600 mb-12 text-lg">
             <span className="inline-block mr-2">♥</span>
@@ -209,7 +209,7 @@ const Index = () => {
       </section>
 
       <footer className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 py-4 text-white text-center">
-        <p className="font-medium">Made with 💕 by Лиса</p>
+        <p className="font-medium">Made with ♥ by Лиса</p>
       </footer>
     </div>
   );
