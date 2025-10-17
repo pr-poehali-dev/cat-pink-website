@@ -311,8 +311,14 @@ const Index = () => {
         </div>
       </section>
 
-      <footer className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 py-4 text-white text-center">
-        <p className="font-medium">Made with ♥ by Лиса</p>
+      <footer className="fixed bottom-0 left-0 right-0 bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 py-3 text-white text-center">
+        <div className="flex items-center justify-center gap-2 mb-1">
+          <Icon name="Send" className="text-white" size={20} />
+          <a href="https://t.me/lilbroBBQ" target="_blank" rel="noopener noreferrer" className="font-medium hover:underline">
+            @lilbroBBQ
+          </a>
+        </div>
+        <p className="text-sm">мой тгк: @lililibabyQ</p>
       </footer>
     </div>
   );
