@@ -75,6 +75,14 @@ const Index = () => {
     { url: "https://cdn.poehali.dev/files/4492560d-ce60-4183-9acc-d72575f34c6b.jpg", rotation: -6 }
   ];
 
+  const kinList = [
+    { name: "kwon jiwook", image: "https://cdn.poehali.dev/files/9a6e83f3-49ec-49f5-8445-09852e5a5901.jpg" },
+    { name: "minho byun", image: "https://cdn.poehali.dev/files/75ef550a-ce20-405c-add2-58bb81b7c9b9.jpg" },
+    { name: "twilight sparkle", image: "https://cdn.poehali.dev/files/80548c8e-1cc8-44eb-a31e-2854c5ba1450.jpg" },
+    { name: "lee myung-gi", image: "https://cdn.poehali.dev/files/de65c599-9ce1-411f-bb89-0e96b2080381.jpg" },
+    { name: "hwang inho", image: "https://cdn.poehali.dev/files/5a865845-f533-42e1-86b8-b63037103751.jpg" }
+  ];
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -93,7 +101,7 @@ const Index = () => {
           <div className="flex items-center gap-4">
             <h1 className="text-3xl font-bold text-gradient flex-shrink-0">•</h1>
             <div className="flex gap-6 overflow-x-auto scrollbar-hide flex-1">
-              {["about", "hobbies", "fandoms", "manhwas", "music", "friends", "dni"].map((section) => (
+              {["about", "hobbies", "fandoms", "manhwas", "music", "friends", "kins", "dni"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -104,7 +112,8 @@ const Index = () => {
                    section === "fandoms" ? "Фандомы" : 
                    section === "manhwas" ? "Манхвы" : 
                    section === "music" ? "Музыка" : 
-                   section === "friends" ? "Друзья" : "DNI"}
+                   section === "friends" ? "Друзья" : 
+                   section === "kins" ? "Кинны" : "DNI"}
                 </button>
               ))}
             </div>
@@ -372,6 +381,29 @@ const Index = () => {
               <p className="text-xl text-gray-700">пишите мне почаще, а то я иногда скучаю</p>
             </div>
           </Card>
+        </div>
+      </section>
+
+      <section id="kins" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">Кинны</h2>
+          <div className="space-y-6">
+            {kinList.map((kin, index) => (
+              <Card 
+                key={index}
+                className="p-6 bg-white/80 backdrop-blur border-2 border-purple-200 rounded-3xl shadow-lg hover:shadow-xl transition-shadow"
+              >
+                <div className="flex items-center gap-6">
+                  <img 
+                    src={kin.image}
+                    alt={kin.name}
+                    className="w-24 h-24 md:w-32 md:h-32 object-cover rounded-2xl border-3 border-purple-300 shadow-md flex-shrink-0"
+                  />
+                  <h3 className="text-2xl md:text-3xl font-bold text-purple-700">{kin.name}</h3>
+                </div>
+              </Card>
+            ))}
+          </div>
         </div>
       </section>
 
