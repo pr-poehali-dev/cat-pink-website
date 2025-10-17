@@ -55,14 +55,14 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-cyan-50 decorative-border">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-200 shadow-sm">
         <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <h1 className="text-3xl font-bold text-gradient">•</h1>
-            <div className="flex gap-6">
+          <div className="flex items-center gap-4">
+            <h1 className="text-3xl font-bold text-gradient flex-shrink-0">•</h1>
+            <div className="flex gap-6 overflow-x-auto scrollbar-hide flex-1">
               {["about", "hobbies", "fandoms", "manhwas", "music", "dni"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
-                  className="text-sm font-medium text-pink-600 hover:text-pink-800 transition-colors capitalize"
+                  className="text-sm font-medium text-pink-600 hover:text-pink-800 transition-colors capitalize whitespace-nowrap flex-shrink-0"
                 >
                   {section === "about" ? "Обо мне" : 
                    section === "hobbies" ? "Увлечения" :

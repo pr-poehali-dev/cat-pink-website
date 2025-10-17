@@ -195,4 +195,13 @@
     right: 0;
     border-left: 2px solid rgba(255, 182, 217, 0.4);
   }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
 }
