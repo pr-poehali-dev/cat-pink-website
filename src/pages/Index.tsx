@@ -113,7 +113,7 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="h-px bg-gradient-to-r from-pink-200 via-purple-200 to-cyan-200"></div>
-                <p className="text-gray-700 leading-relaxed text-center">Живу в мире аниме, пикми изгой нншка какая-то✿</p>
+                <p className="text-gray-700 leading-relaxed text-center">пикми изгой нншка какая-то✿</p>
               </div>
             </div>
           </Card>
