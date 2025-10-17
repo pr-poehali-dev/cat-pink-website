@@ -15,8 +15,8 @@ const Index = () => {
     { name: "nuc", image: "https://cdn.poehali.dev/files/d02cfdbf-29cc-4411-823a-925becf3161e.jpg" },
     { name: "mlp", image: "https://cdn.poehali.dev/files/bc985f5c-b18f-4409-8db6-7fa448a004e7.jpg" },
     { name: "dungeon meshi", image: "https://cdn.poehali.dev/files/44502990-e7c1-4fa5-987b-c37da9ef5aae.jpg" },
-    { name: "kimetsu no yaiba", image: "https://cdn.poehali.dev/files/3a0bdc86-f36d-4017-a217-0d6b4d7ee7cc.jpg" },
-    { name: "dandadan", image: "https://cdn.poehali.dev/files/2a048e94-5f85-4c5d-ac35-3694cc240d6f.jpg" }
+    { name: "kimetsu no yaiba", image: "https://cdn.poehali.dev/files/1f56942d-5607-464c-910b-a936b52b2387.jpg" },
+    { name: "dandadan", image: "https://cdn.poehali.dev/files/91e6a5fb-bc30-4173-b16e-9d2a68dafca8.jpg" }
   ];
 
   const manhwas = [
