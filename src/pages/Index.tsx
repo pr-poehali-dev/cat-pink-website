@@ -65,7 +65,14 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-cyan-50 decorative-border">
+    <div className="min-h-screen bg-gradient-to-br from-pink-50 via-purple-50 to-cyan-50 decorative-border relative overflow-hidden">
+      <div className="fixed inset-0 animate-gradient pointer-events-none z-0"></div>
+      <div className="fixed inset-0 pointer-events-none z-0">
+        {[...Array(10)].map((_, i) => (
+          <div key={i} className="petal"></div>
+        ))}
+      </div>
+      <div className="relative z-10">
       <nav className="fixed top-0 left-0 right-0 z-50 bg-white/80 backdrop-blur-md border-b border-pink-200 shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center gap-4">
@@ -320,6 +327,7 @@ const Index = () => {
         </div>
         <p className="text-sm">мой тгк: @lililibabyQ</p>
       </footer>
+      </div>
     </div>
   );
 };

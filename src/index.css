@@ -131,6 +131,105 @@
     }
   }
 
+  .animate-gradient {
+    background: linear-gradient(
+      45deg,
+      rgba(255, 182, 217, 0.1),
+      rgba(218, 112, 214, 0.08),
+      rgba(152, 222, 217, 0.1),
+      rgba(255, 182, 217, 0.1)
+    );
+    background-size: 400% 400%;
+    animation: gradient-shift 15s ease infinite;
+  }
+
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
+  .petal {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: radial-gradient(
+      ellipse at center,
+      rgba(255, 182, 217, 0.3) 0%,
+      rgba(255, 182, 217, 0.1) 50%,
+      transparent 100%
+    );
+    border-radius: 50% 0 50% 0;
+    opacity: 0;
+    animation: petal-fall 20s linear infinite;
+  }
+
+  .petal:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+  }
+  .petal:nth-child(2) {
+    left: 20%;
+    animation-delay: 2s;
+  }
+  .petal:nth-child(3) {
+    left: 30%;
+    animation-delay: 4s;
+  }
+  .petal:nth-child(4) {
+    left: 40%;
+    animation-delay: 6s;
+  }
+  .petal:nth-child(5) {
+    left: 50%;
+    animation-delay: 8s;
+  }
+  .petal:nth-child(6) {
+    left: 60%;
+    animation-delay: 10s;
+  }
+  .petal:nth-child(7) {
+    left: 70%;
+    animation-delay: 12s;
+  }
+  .petal:nth-child(8) {
+    left: 80%;
+    animation-delay: 14s;
+  }
+  .petal:nth-child(9) {
+    left: 90%;
+    animation-delay: 16s;
+  }
+  .petal:nth-child(10) {
+    left: 15%;
+    animation-delay: 18s;
+  }
+
+  @keyframes petal-fall {
+    0% {
+      top: -10%;
+      opacity: 0;
+      transform: translateX(0) rotate(0deg);
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      top: 110%;
+      opacity: 0;
+      transform: translateX(100px) rotate(360deg);
+    }
+  }
+
   .text-gradient {
     background: linear-gradient(135deg, #ff69b4 0%, #ffb6d9 50%, #98ded9 100%);
     -webkit-background-clip: text;
