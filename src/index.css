@@ -134,10 +134,10 @@
   .animate-gradient {
     background: linear-gradient(
       45deg,
-      rgba(255, 182, 217, 0.1),
-      rgba(218, 112, 214, 0.08),
-      rgba(152, 222, 217, 0.1),
-      rgba(255, 182, 217, 0.1)
+      rgba(255, 182, 217, 0.15),
+      rgba(218, 112, 214, 0.12),
+      rgba(152, 222, 217, 0.15),
+      rgba(255, 182, 217, 0.15)
     );
     background-size: 400% 400%;
     animation: gradient-shift 15s ease infinite;
@@ -157,12 +157,12 @@
 
   .petal {
     position: absolute;
-    width: 10px;
-    height: 10px;
+    width: 20px;
+    height: 20px;
     background: radial-gradient(
       ellipse at center,
-      rgba(255, 182, 217, 0.3) 0%,
-      rgba(255, 182, 217, 0.1) 50%,
+      rgba(255, 182, 217, 0.5) 0%,
+      rgba(255, 182, 217, 0.25) 50%,
       transparent 100%
     );
     border-radius: 50% 0 50% 0;

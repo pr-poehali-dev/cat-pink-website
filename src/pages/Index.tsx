@@ -44,7 +44,8 @@ const Index = () => {
     "Kill Eva",
     "Staple R",
     "Underoath",
-    "ЛСП(немного...)"
+    "ЛСП(немного...)",
+    "BLACKPINK"
   ];
 
   const friends = [
