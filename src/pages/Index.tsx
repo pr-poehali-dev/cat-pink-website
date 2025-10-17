@@ -47,6 +47,19 @@ const Index = () => {
     "ЛСП(немного...)"
   ];
 
+  const friends = [
+    "дурак",
+    "саша",
+    "зажичка",
+    "БРО",
+    "дина",
+    "лина",
+    "вормя",
+    "фура",
+    "аня",
+    "любавочка"
+  ];
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -58,7 +71,7 @@ const Index = () => {
           <div className="flex items-center gap-4">
             <h1 className="text-3xl font-bold text-gradient flex-shrink-0">•</h1>
             <div className="flex gap-6 overflow-x-auto scrollbar-hide flex-1">
-              {["about", "hobbies", "fandoms", "manhwas", "music", "dni"].map((section) => (
+              {["about", "hobbies", "fandoms", "manhwas", "music", "friends", "dni"].map((section) => (
                 <button
                   key={section}
                   onClick={() => scrollToSection(section)}
@@ -68,7 +81,8 @@ const Index = () => {
                    section === "hobbies" ? "Увлечения" :
                    section === "fandoms" ? "Фандомы" : 
                    section === "manhwas" ? "Манхвы" : 
-                   section === "music" ? "Музыка" : "DNI"}
+                   section === "music" ? "Музыка" : 
+                   section === "friends" ? "Друзья" : "DNI"}
                 </button>
               ))}
             </div>
@@ -233,6 +247,28 @@ const Index = () => {
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id="friends" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-6xl font-bold text-center mb-8 text-gradient">Друзяшки мои любимые обожаю ихх!</h2>
+          <Card className="p-8 bg-gradient-to-br from-pink-100 to-purple-50 border-2 border-pink-300 rounded-3xl shadow-lg hover:shadow-xl transition-shadow">
+            <div className="flex flex-wrap gap-3 justify-center mb-6">
+              {friends.map((friend, index) => (
+                <div
+                  key={index}
+                  className="px-6 py-3 bg-white/80 rounded-full border-2 border-pink-300 shadow-md hover:scale-110 transition-transform"
+                >
+                  <span className="text-lg font-semibold text-pink-700">{friend}</span>
+                </div>
+              ))}
+            </div>
+            <div className="text-center space-y-2">
+              <p className="text-xl text-gray-700">Я вас всех очень сильно люблю,</p>
+              <p className="text-xl text-gray-700">пишите мне почаще, а то я иногда скучаю</p>
+            </div>
+          </Card>
         </div>
       </section>
 
