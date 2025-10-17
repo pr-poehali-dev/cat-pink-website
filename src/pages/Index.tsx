@@ -86,7 +86,7 @@ const Index = () => {
               <div className="flex gap-3 flex-wrap">
                 <Badge className="bg-pink-400 text-white text-lg px-4 py-2">17 y.o.</Badge>
                 <Badge className="bg-purple-400 text-white text-lg px-4 py-2"></Badge>
-                <Badge className="bg-cyan-400 text-white text-lg px-4 py-2">peak me</Badge>
+                <Badge className="bg-cyan-400 text-white text-lg px-4 py-2"></Badge>
               </div>
               <p className="text-xl text-gray-700 leading-relaxed">
                 Добро пожаловать в мой милый уголок интернета! ✧
