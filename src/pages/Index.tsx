@@ -169,7 +169,7 @@ const Index = () => {
             ))}
           </div>
           <div className="mt-12 text-center">
-            <p className="text-gray-600 text-lg">и многое другое! ✦</p>
+            <p className="text-gray-600 text-lg">etc. . .</p>
           </div>
         </div>
       </section>
