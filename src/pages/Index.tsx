@@ -158,47 +158,47 @@ const Index = () => {
         </div>
       </section>
 
-      <div className="fixed left-8 top-40 z-20 hidden md:block">
+      <div className="absolute left-4 md:left-8 top-40 z-20">
         <img 
           src={catStickers[0].url}
           alt="cat sticker"
-          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[0].rotation}deg)` }}
         />
       </div>
 
-      <div className="fixed right-12 top-[500px] z-20 hidden md:block">
+      <div className="absolute right-4 md:right-12 top-[500px] z-20">
         <img 
           src={catStickers[1].url}
           alt="cat sticker"
-          className="w-24 h-24 object-cover rounded-2xl border-4 border-white shadow-md"
+          className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[1].rotation}deg)` }}
         />
       </div>
 
-      <div className="fixed left-16 top-[900px] z-20 hidden md:block">
+      <div className="absolute left-4 md:left-16 top-[900px] z-20">
         <img 
           src={catStickers[2].url}
           alt="cat sticker"
-          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[2].rotation}deg)` }}
         />
       </div>
 
-      <div className="fixed right-8 top-[1300px] z-20 hidden md:block">
+      <div className="absolute right-4 md:right-8 top-[1300px] z-20">
         <img 
           src={catStickers[3].url}
           alt="cat sticker"
-          className="w-24 h-24 object-cover rounded-2xl border-4 border-white shadow-md"
+          className="w-20 h-20 md:w-24 md:h-24 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[3].rotation}deg)` }}
         />
       </div>
 
-      <div className="fixed left-10 top-[1700px] z-20 hidden md:block">
+      <div className="absolute left-4 md:left-10 top-[1700px] z-20">
         <img 
           src={catStickers[4].url}
           alt="cat sticker"
-          className="w-20 h-20 object-cover rounded-2xl border-4 border-white shadow-md"
+          className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[4].rotation}deg)` }}
         />
       </div>
