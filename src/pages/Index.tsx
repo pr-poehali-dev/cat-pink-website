@@ -122,9 +122,7 @@ const Index = () => {
 
       <section id="hobbies" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">
-            Увлечения ✧
-          </h2>
+          <h2 className="text-6xl font-bold text-center mb-12 text-gradient">Увлечения </h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card className="p-8 bg-gradient-to-br from-pink-100 to-pink-50 border-2 border-pink-200 rounded-3xl hover:scale-105 transition-transform shadow-lg">
               <div className="flex items-center gap-4 mb-4">
