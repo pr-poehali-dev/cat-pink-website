@@ -68,6 +68,13 @@ const Index = () => {
     { url: "https://cdn.poehali.dev/files/661e930a-0f58-4e78-bbc9-8bc9fe0a6af8.jpg", rotation: -10 }
   ];
 
+  const cuteStickers = [
+    { url: "https://cdn.poehali.dev/files/df1be0f4-5cd4-43db-a9fa-f0b5cf949f95.jpg", rotation: 6 },
+    { url: "https://cdn.poehali.dev/files/3c75cdf2-49a0-4351-8f3d-a83919de7fbf.jpg", rotation: -12 },
+    { url: "https://cdn.poehali.dev/files/cb9c428c-a62f-4a37-987b-5e4022da9657.jpg", rotation: 8 },
+    { url: "https://cdn.poehali.dev/files/4492560d-ce60-4183-9acc-d72575f34c6b.jpg", rotation: -6 }
+  ];
+
   const scrollToSection = (id: string) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -200,6 +207,42 @@ const Index = () => {
           alt="cat sticker"
           className="w-16 h-16 md:w-20 md:h-20 object-cover rounded-2xl border-4 border-white shadow-md"
           style={{ transform: `rotate(${catStickers[4].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="absolute right-8 md:right-16 top-[350px] z-20">
+        <img 
+          src={cuteStickers[0].url}
+          alt="cute sticker"
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          style={{ transform: `rotate(${cuteStickers[0].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="absolute left-8 md:left-20 top-[650px] z-20">
+        <img 
+          src={cuteStickers[1].url}
+          alt="cute sticker"
+          className="w-14 h-14 md:w-16 md:h-16 object-contain"
+          style={{ transform: `rotate(${cuteStickers[1].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="absolute right-6 md:right-10 top-[1100px] z-20">
+        <img 
+          src={cuteStickers[2].url}
+          alt="cute sticker"
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          style={{ transform: `rotate(${cuteStickers[2].rotation}deg)` }}
+        />
+      </div>
+
+      <div className="absolute left-12 md:left-24 top-[1500px] z-20">
+        <img 
+          src={cuteStickers[3].url}
+          alt="cute sticker"
+          className="w-16 h-16 md:w-20 md:h-20 object-contain"
+          style={{ transform: `rotate(${cuteStickers[3].rotation}deg)` }}
         />
       </div>
 
