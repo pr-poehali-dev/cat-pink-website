@@ -133,7 +133,7 @@ const Index = () => {
                 </div>
                 <h3 className="text-3xl font-bold text-pink-700">Рисование</h3>
               </div>
-              <p className="text-gray-700 leading-relaxed">неистово херачу арты</p>
+              <p className="text-gray-700 leading-relaxed text-center">неистово херачу арты</p>
             </Card>
 
             <Card className="p-8 bg-gradient-to-br from-purple-100 to-purple-50 border-2 border-purple-200 rounded-3xl hover:scale-105 transition-transform shadow-lg">
