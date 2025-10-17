@@ -227,7 +227,7 @@ const Index = () => {
                   <Icon name="X" className="text-white" size={24} />
                 </div>
                 <div>
-                  <h3 className="text-2xl font-semibold text-red-700 mb-2">Считаете, что дружба строится только на фандомах</h3>
+                  <h3 className="text-2xl font-semibold mb-2 text-gray-600">Считаете, что дружба строится только на фандомах</h3>
                   <p className="text-gray-700"></p>
                 </div>
               </div>
